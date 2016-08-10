@@ -19,13 +19,12 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               ""
+  id:               "AWEEKJ"
 
 # URL
-url:                ""
-#url:                "http://aweekj.github.io/Kiko-plus"
+url:                "http://aweekj.github.io/Kiko-plus"
 
-baseurl:            ""
+baseurl:            "/Kiko-plus"
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
