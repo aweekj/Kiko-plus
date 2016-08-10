@@ -3,11 +3,11 @@ layout: default
 ---
 <header class="header">
   <h1 class="header-title">
-    <a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s blog</span></a>
+    <a href="{{ site.baseurl }}">{{ site.name }}<span>&#39;s blog</span></a>
   </h1>
   <nav class="header-nav">
     {% for nav in site.nav %}
-    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    <a href="{{ site.baseurl }}/{{ nav.url }}">{{ nav.name }}</a>
     {% endfor %}
   </nav>
 </header>
@@ -18,7 +18,7 @@ layout: default
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <div class="list-post">
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ site.baseurl }}/{{ post.url }}">
       <div class="list-post-date">
         <time>{{ post.date | date_to_string }}</time>
       </div>
