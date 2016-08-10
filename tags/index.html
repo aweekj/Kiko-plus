@@ -28,6 +28,7 @@ permalink: /tags/
 
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+  <span class="anchor-bookmark" id="{{ this_word }}"></span>
 	<article>
 	<h2 class="tag-group-title">{{ this_tag }}</h2>
 		<ul>
