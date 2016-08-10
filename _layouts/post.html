@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<header class="header">
+  <h1 class="header-title--small">
+    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+  </h1>
+</header>
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <div class="post-date">
+    <time>{{ page.date | date_to_string }}</time>
+  </div>
+  <div class="post-tag">
+    <ul>
+      {% for tag in page.tags %}
+      <li>
+        <a href="{{ site.url }}/tags#{{ tag }}" class="tag">
+          <span class="term">{{ tag }}</span>
+        </a>
+      </li>
+      {% unless forloop.last %}{% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  {{ content }}
+
+</div>
+
+<div class="disqus">
+  {% include disqus.html %}
+</div>

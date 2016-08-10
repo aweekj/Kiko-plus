@@ -1,0 +1,83 @@
+# # # # # # # # # # # # #
+#   K i k o - p l u s   #
+# # # # # # # # # # # # #
+
+# Basic
+name:               "Kiko-plus"
+description:        "a clean, lightweight and minimalistic blog theme for jekyll"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+#url:                "http://aweekj.github.io"
+
+author:             "Kiko"
+twitter:
+  username:         "Kiko"
+
+# Google-analytics
+google-analytics:
+  id:               ""
+
+# Disqus
+disqus:
+  id:               ""
+
+# URL
+url:                ""
+#url:                "http://aweekj.github.io/Kiko-plus"
+
+baseurl:            ""
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Asia/Seoul
+permalink:          /:year-:month-:day/:title/
+
+# Pagination
+paginate:           5
+paginate_path:      "/page:num/"
+
+# Markdown
+markdown:           kramdown
+kramdown:
+  imput:            GFM
+
+# Navigation
+nav:
+  - name:           "About"
+    url:            "/about"
+  - name:           "Archive"
+    url:            "/archive/index.html"
+  - name:           "Categories"
+    url:            "/categories/index.html"
+  - name:           "Tags"
+    url:            "/tags/index.html"
+  - name:           "Github"
+    url:            "https://github.com/AWEEKJ/Kiko-plus"
+
+
+
+# Sass
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+exclude:            [vendor]

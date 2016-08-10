@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<header class="header">
+  <h1 class="header-title">
+    <a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s blog</span></a>
+  </h1>
+  <nav class="header-nav">
+    {% for nav in site.nav %}
+    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
+<div class="list">
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% else %}
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <div class="list-post">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+      <div class="list-post-date">
+        <time>{{ post.date | date_to_string }}</time>
+      </div>
+      <div class="list-post-title">
+        {{ post.title }}
+      </div>
+      <div class="list-post-desc">
+        {{ post.description }}
+      </div>
+    </a>
+  </div>
+{% endfor %}
+  <!-- Pagination links -->
+  <div class="list-pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+  </div>
+{% endif %}
+</div>
