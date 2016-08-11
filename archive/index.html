@@ -1,21 +1,22 @@
 ---
 layout: page
 title: Archive
-permalink: /archive/
 ---
-<div class="content list">
-{% if site.posts.size == 0 %}
-  <h2>No post found</h2>
-{% else %}
-{% for post in site.posts %}
-  <div class="list-item">
-    <h2 class="list-post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <div class="list-post-date">
-      <time>{{ post.date | date_to_string }}</time>
+<div class="archive">
+  <div class="archive-list">
+  {% if site.posts.size == 0 %}
+    <h2>No post found</h2>
+  {% else %}
+  {% for post in site.posts %}
+    <div class="archive-list-post">
+      <span class="archive-list-post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </span>
+      <span class="archive-list-post-date">
+        <time>| {{ post.date | date_to_string }}</time>
+      </span>
     </div>
+  {% endfor %}
+  {% endif %}
   </div>
-{% endfor %}
-{% endif %}
 </div>

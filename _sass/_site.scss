@@ -118,11 +118,15 @@ body {
     }
   margin-bottom: .3rem;
   }
+  &-share {
+    margin-bottom: 1rem;
+  }
 }
 
 .list {
   &-post {
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 
     a {
       color: #333;
@@ -135,16 +139,19 @@ body {
 
     &-title {
       margin-bottom: .25rem;
-      font-size : 1rem;
+      font-size : 1.6rem;
+      font-weight: 600;
     }
 
     &-date {
+      color: #aaa;
       font-size: .75rem;
       text-transform: uppercase;
     }
 
     &-desc {
-      font-size :.75rem;
+      margin-bottom: .25rem;
+      font-size :1rem;
     }
   }
 }
@@ -162,7 +169,7 @@ body {
       background-color: lighten($base-color,50);
       span {
         float: left;
-        padding: 2px 6px;
+        padding: 3px 3px;
       }
       .count {
         background-color: lighten($base-color,40);
@@ -172,8 +179,47 @@ body {
       }
     }
   }
+}
 
-  &-group-title {
-    text-transform: lowercase;
+.archive {
+  &-list {
+    &-post {
+
+      a {
+        color: #333;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+
+      &-title {
+        font-size : 1.2rem;
+        font-weight: 600;
+      }
+
+      &-date {
+        color: #aaa;
+        font-size: .75rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+
+.footer {
+  text-align: center;
+  font-size: .75rem;
+
+  &-link {
+    margin: .2rem;
+
+    a {
+      color: #515151;
+      margin: 4px;
+    }
   }
 }

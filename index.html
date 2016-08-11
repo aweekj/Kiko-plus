@@ -3,7 +3,7 @@ layout: default
 ---
 <header class="header">
   <h1 class="header-title">
-    <a href="{{ site.baseurl }}">{{ site.name }}<span>&#39;s blog</span></a>
+    <a href="{{ site.baseurl }}">{{ site.name }}</a>
   </h1>
   <nav class="header-nav">
     {% for nav in site.nav %}
@@ -25,9 +25,11 @@ layout: default
       <div class="list-post-title">
         {{ post.title }}
       </div>
+      {% if post.description %}
       <div class="list-post-desc">
         {{ post.description }}
       </div>
+      {% endif %}
     </a>
   </div>
 {% endfor %}

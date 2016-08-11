@@ -9,9 +9,15 @@ description:        "a clean, lightweight and minimalistic blog theme for jekyll
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
 #url:                "http://aweekj.github.io"
 
-author:             "Kiko"
-twitter:
-  username:         "Kiko"
+author:
+  name:             "Kiko-plus"
+  facebook:         "asdf"
+  twitter:          "asdf"
+  github:           "asdf"
+  linkedin:         "asdf"
+  medium:           "asdf"
+  tumblr:           "asdf"
+  email:            "asdf@asdf.com"
 
 # Google-analytics
 google-analytics:

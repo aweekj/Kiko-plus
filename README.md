@@ -4,12 +4,15 @@ This blog is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme, powered by
 
 ## Rakefile Usage
 
-``` bash
+```bash
 $ rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 $ rake draft title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 $ rake page name="about.html"
 $ rake preview
 ```
+
+## Add Social Share Kit
+[http://socialsharekit.com](http://socialsharekit.com)
 
 ## License
 
