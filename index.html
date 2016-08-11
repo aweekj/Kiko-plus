@@ -1,16 +1,8 @@
 ---
 layout: default
 ---
-<header class="header">
-  <h1 class="header-title">
-    <a href="{{ site.baseurl }}">{{ site.name }}</a>
-  </h1>
-  <nav class="header-nav">
-    {% for nav in site.nav %}
-    <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
-    {% endfor %}
-  </nav>
-</header>
+{% include header.html %}
+
 <div class="list">
 {% if site.posts.size == 0 %}
   <h2>No post found</h2>
