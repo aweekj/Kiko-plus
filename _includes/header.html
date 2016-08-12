@@ -4,7 +4,7 @@
   </h1>
   <nav class="header-nav">
     {% for nav in site.nav %}
-    {% if menu.url contains 'http://' or menu.url contains 'https://' %}
+    {% if nav.url contains 'http://' or nav.url contains 'https://' %}
     <a href="{{ nav.url }}">{{ nav.name }}</a>
     {% else %}
     <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>

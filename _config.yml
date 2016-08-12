@@ -4,20 +4,19 @@
 
 # Basic
 name:               "Kiko-plus"
-description:        "a clean, lightweight and minimalistic blog theme for jekyll"
 
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
 #url:                "http://aweekj.github.io"
 
 author:
-  name:             "Kiko-plus"
-  facebook:         "asdf"
-  twitter:          "asdf"
-  github:           "asdf"
-  linkedin:         "asdf"
-  medium:           "asdf"
-  tumblr:           "asdf"
-  email:            "asdf@asdf.com"
+  name:             your-name
+  facebook:         your-id
+  twitter:          your-id
+  github:           your-id
+  linkedin:         your-id
+  medium:           your-id
+  tumblr:           your-id
+  email:            your-id@your-email.com
 
 # Google-analytics
 google-analytics:
@@ -39,7 +38,7 @@ permalink:          /:year-:month-:day/:title/
 
 # Pagination
 paginate:           5
-paginate_path:      "/page:num/"
+paginate_path:      /page:num/
 
 # Markdown
 markdown:           kramdown
@@ -52,8 +51,6 @@ nav:
     url:            "/about"
   - name:           "Archive"
     url:            "/archive"
-  - name:           "Categories"
-    url:            "/categories"
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"

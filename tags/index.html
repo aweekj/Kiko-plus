@@ -12,12 +12,12 @@ permalink: /tags/
 
 {% assign tags_list = site_tags | split:',' | sort %}
 
-<ul class="tag-index">
+<ul>
   {% for item in (0..site.tags.size) %}
   {% unless forloop.last %}
     {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  	<li>
-      <a href="#{{ this_tag }}" class="tag-index-link">
+  	<li class="tag-index">
+      <a href="#{{ this_tag }}">
         <span>{{ this_tag }}</span>
         <span class="count">{{ site.tags[this_tag].size }}</span>
       </a>
@@ -29,11 +29,14 @@ permalink: /tags/
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
 	<article>
-	<h2 id="{{ this_word }}">{{ this_tag }}</h2>
+
+	<div class="tag-title" id="{{ this_tag }}">
+    {{ this_tag }}
+  </div>
 		<ul>
     {% for post in site.tags[this_tag] %}
     {% if post.title != null %}
-      <li>
+      <li class="tag-post">
         <a href="{{ site.url }}{{ post.url }}">
           <span class="tag-post-title">{{ post.title }}</span>
         </a>
