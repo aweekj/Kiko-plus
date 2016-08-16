@@ -1,0 +1,331 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: $base-font;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+
+  @media (min-width: 38em) {
+    font-size: 20px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  max-width: 38rem;
+  padding: 2rem 1.5rem;
+  margin-left:  auto;
+  margin-right: auto;
+
+  @media (min-width: 38rem){
+    padding: 5rem 1rem;
+  }
+}
+
+
+/*--------------
+  Header
+  -------------- */
+.header {
+  padding: 2%;
+
+  &-title {
+    font-weight: 300;
+    a {
+      color: $base-color;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    span {
+      color: lighten($base-color, 60);
+    }
+
+  }
+
+  &-nav {
+    a {
+      color: lighten($base-color, 50);
+      font-weight: 300;
+      text-transform: lowercase;
+      -webkit-transition: all .2s ease;
+         -moz-transition: all .2s ease;
+              transition: all .2s ease;
+
+      &:hover,
+      &:focus {
+        color: $base-color;
+        text-decoration: none;
+      }
+
+      + a {
+        margin-left: .25rem;
+      }
+    }
+  }
+}
+
+.header-small {
+	text-align: left;
+	margin-bottom: .75rem;
+	font-size: .75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	a {
+		color: $base-color;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+}
+
+/*--------------
+  Page
+  -------------- */
+
+.page {
+  &-title {
+    margin-bottom: 2rem;
+  }
+}
+
+
+/*--------------
+  Post
+  -------------- */
+.post {
+
+  &-title {
+    margin-bottom: 0rem;
+  }
+
+  &-date {
+    margin-bottom: .5rem;
+    color: $base-lighten-color;
+    font-size: .75rem;
+    text-transform: uppercase;
+  }
+
+  &-tag {
+    margin-bottom: 1rem;
+    .tag {
+      display: inline-block;
+      margin: 4px;
+      margin-left: 0px;
+      color: #fff;
+      background-color: $base-lighten-color;
+      text-decoration: none;
+			border-radius: 3px;
+    }
+    li {
+      font-size: .75rem;
+      display: inline;
+      list-style-type: none;
+      text-transform: lowercase;
+    }
+    span {
+      float: left;
+			padding: .5px 5px;
+    }
+  }
+  &-share {
+    margin-bottom: 1rem;
+  }
+}
+
+/*--------------
+  Post list
+  -------------- */
+
+.list {
+  &-post {
+    padding: 4% 2%;
+    &:hover {
+    background-color: $background-over-color;
+    border-color: transparent;
+    border-radius: 10px;
+    }
+
+    a {
+      color: $base-color;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    &-title {
+      margin-bottom: .25rem;
+      font-size : 1.6rem;
+      font-weight: 600;
+    }
+
+    &-date {
+      color: $base-lighten-color;
+      font-size: .75rem;
+      text-transform: uppercase;
+    }
+
+    &-desc {
+			color: lighten($base-color, 20);
+      margin-bottom: .25rem;
+      font-size :1rem;
+    }
+  }
+
+  &-pagination {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: lowercase;
+
+    &-previous {
+      float: left;
+      padding-left: 2%;
+      a {
+        color: $base-lighten-color;
+
+        &:hover,
+        &:focus {
+          color: $base-color;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-next {
+      float: right;
+      padding-right: 2%;
+      a {
+        color: $base-lighten-color;
+
+        &:hover {
+          color: $base-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+/*--------------
+  Tags
+  -------------- */
+.tag {
+  &-index {
+    font-size: .75rem;
+    display: inline;
+    list-style-type: none;
+    text-transform: lowercase;
+
+
+    a {
+      display: inline-block;
+      margin: 1px 4px;
+      color: #fff;
+      background-color: lighten($base-color,50);
+			border-radius: 3px;
+      span {
+        float: left;
+        padding: .5px 5px;
+      }
+      .count {
+        background-color: lighten($base-color,40);
+				border-radius: 0 3px 3px 0;
+      }
+      &:hover {
+        background-color: lighten($base-color,40);
+      }
+    }
+  }
+
+  &-title {
+		font-size: 1.4rem;
+		font-weight: 600;
+		text-transform: lowercase;
+		padding-top: 1rem;
+  }
+
+  &-post {
+		padding-left: .75rem;
+		a {
+			color: $base-color;
+
+			&:hover {
+				color: $base-color;
+				text-decoration: none;
+				background-color: $background-over-color;
+		    border-color: transparent;
+      }
+		}
+  }
+}
+
+/*--------------
+  Archive
+  -------------- */
+.archive {
+  &-list {
+    &-post {
+
+      a {
+        color: $base-color;
+
+        &:hover {
+  				color: $base-color;
+  				text-decoration: none;
+  				background-color: $background-over-color;
+  		    border-color: transparent;
+        }
+
+      }
+
+
+      &-title {
+        font-size : 1.2rem;
+        font-weight: 600;
+      }
+
+      &-date {
+        color: $base-lighten-color;
+        font-size: .75rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+/*--------------
+  Footer
+  -------------- */
+.footer {
+  text-align: center;
+  font-size: .75rem;
+
+  &-link {
+    margin: .2rem;
+
+    a {
+      color: $base-color;
+      margin: 4px;
+    }
+  }
+}

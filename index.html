@@ -10,7 +10,11 @@ layout: default
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <div class="list-post">
+    {% if post.link %}
+    <a href="{{ post.link }}">
+    {% else %}
     <a href="{{ post.url | prepend: site.baseurl }}">
+    {% endif %}  
       <div class="list-post-date">
         <time>{{ post.date | date_to_string }}</time>
       </div>
@@ -23,6 +27,8 @@ layout: default
       </div>
       {% endif %}
     </a>
+
+
   </div>
 {% endfor %}
   <!-- Pagination links -->
@@ -45,7 +51,7 @@ layout: default
           <i class="fa fa-angle-right" aria-hidden="true"></i>
         </a>
       {% else %}
-      
+
       {% endif %}
     </span>
 

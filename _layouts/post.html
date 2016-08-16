@@ -8,9 +8,9 @@ layout: default
 </header>
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-date">
+  <span class="post-date">
     <time>{{ page.date | date_to_string }}</time>
-  </div>
+  </span>
   <div class="post-tag">
     <ul>
       {% for tag in page.tags %}

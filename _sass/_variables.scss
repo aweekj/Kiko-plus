@@ -1,4 +1,27 @@
 /* SCSS Variables */
 
-/* Colors */
-$base-color				 : rgba(#222,0.8);
+/*--------------
+  Font
+  -------------- */
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600';
+
+$base-font: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$code-font: Menlo, Monaco, monospace;
+$code-gist-font: Menlo, Monaco, "Courier New", monospace !important;
+
+
+/*--------------
+  Color
+  -------------- */
+$base-color: rgba(#333,0.8);
+$base-lighten-color: lighten($base-color, 50);
+
+$background-color: #fff;
+$background-over-color: #f5f7f9;
+
+$text-color: #333;
+$link-color: #268bd2;
+$code-color: #bf616a;
+$code-background-color: #f9f9f9;
+$table-border-color: #e5e5e5;
+$table-background-color: #f9f9f9;
