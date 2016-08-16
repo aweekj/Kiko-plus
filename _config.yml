@@ -23,12 +23,12 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "AWEEKJ"
+  id:               "your-id"
 
 # URL
 url:                "https://AWEEKJ.github.io"
 
-baseurl:            "/Kiko-plus"
+baseurl:            ""
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
