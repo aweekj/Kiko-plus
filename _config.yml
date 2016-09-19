@@ -27,7 +27,7 @@ disqus:
 
 # URL
 url:                "https://AWEEKJ.github.io"
-
+#url:               "localhost:4000"
 baseurl:            ""
 
 
