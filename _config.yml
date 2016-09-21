@@ -3,19 +3,19 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "O'Bartman"
 
 
 
 author:
-  name:             your-name
-  facebook:         your-id
-  twitter:          your-id
+  name:             oscar-bartman
+  # facebook:         your-id
+  # twitter:          your-id
   github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
+  # linkedin:         your-id
+  # medium:           your-id
+  # tumblr:           your-id
+  email:            me@obartman.nl
 
 # Google-analytics
 google-analytics:
@@ -23,16 +23,16 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "AWEEKJ"
+  id:               ""
 
 # URL
-url:                "https://AWEEKJ.github.io"
+url:                "https://oscar-bartman.github.io"
 
-baseurl:            "/Kiko-plus"
+baseurl:            "/Website"
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
+timezone:           Europe/London
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
@@ -53,7 +53,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+    url:            "https://github.com/oscar-bartman"
 
 
 
