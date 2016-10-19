@@ -46,14 +46,14 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "About"
+  - name:           "pocomosso"
     url:            "/about"
   - name:           "Archive"
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+    url:            ""
 
 
 
