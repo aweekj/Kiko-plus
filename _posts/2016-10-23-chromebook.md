@@ -3,6 +3,9 @@ title: Chromebook C302C
 date: 2016-10-20
 tag: [테스트]
 ---
+
+(clien 펌)
+
 ### Chromebook C302C
 ASUS는 회전 힌지를 갖춘 고사양 크롬북. Chromebook C302C 를 개발하고있는 모양입니다. 
 
