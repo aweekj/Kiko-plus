@@ -42,7 +42,7 @@ paginate_path:      /page:num/
 # Markdown
 markdown:           kramdown
 kramdown:
-  imput:            GFM
+  input:            GFM
 
 # Navigation
 nav:
