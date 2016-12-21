@@ -15,7 +15,7 @@ layout: default
     <ul>
       {% for tag in page.tags %}
       <li>
-        <a href="{{ site.url }}/tags#{{ tag }}" class="tag">
+        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}" class="tag">
           <span class="term">{{ tag }}</span>
         </a>
       </li>
