@@ -1,11 +1,14 @@
 ---
 layout: post
-title: "A Full and Comprehensive Style Test"
-description: "Test post for style"
-date: 2016-08-15
-tags: [test, style]
+title: A Full and Comprehensive Style Test
+description: Test post for style
+date: {}
+tags:
+  - test
+  - style
 comments: true
 share: true
+published: false
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
