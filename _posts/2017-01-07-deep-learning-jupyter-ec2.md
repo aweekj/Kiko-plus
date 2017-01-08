@@ -1,10 +1,8 @@
 ---
-published: true
+published: false
 author: min
+title: A Lazy Girl's Guide to Setting Up Jupyter on EC2 for Deep Learning
 ---
-
-## A Lazy Girl's Guide to Setting Up Deep Learning in Jupyter on EC2
-
 **TL;DR**: _I describe how I set up a Jupyter server on EC2 with a Marketplace AMI (so we don't have to install too much stuff ourselves) so we can speed up the training of our NN without leaving the convenient workflow of a Jupyter notebook._
 
 Getting started with deep learning is quite easy these days given all the available material out there. I got inspired to build my first convolutional neural network for sentiment analysis after reading [this paper](https://arxiv.org/abs/1408.5882) by Kim (2014) and attending a [PyData meetup](http://www.slideshare.net/textkernel/practical-deep-learning-for-nlp) with a `keras` demo. 
