@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 author: min
 title: A Lazy Girl's Guide to Setting Up Jupyter on EC2 for Deep Learning
 ---
