@@ -25,7 +25,7 @@ authors:
 #    email: hanzou@company.com
 #    web: http://company.com
 #    twitter: company
-#    github: hhattori
+    github: miniaturelle
   guyon:
     name: Guyon Morée
     display_name: Guyon
@@ -70,8 +70,8 @@ nav:
     url:            "/archive"
   - name:           "Tags"
     url:            "/tags"
-  - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+  # - name:           "Github"
+  #   url:            "https://github.com/AWEEKJ/Kiko-plus"
 
 
 
