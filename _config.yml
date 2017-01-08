@@ -9,13 +9,13 @@ name:               "kenophob.io"
 
 author:
   name:             kenophob.io
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
+#  facebook:         your-id
+#  twitter:          your-id
+  github:           kenophobio
+#  linkedin:         your-id
+#  medium:           your-id
+#  tumblr:           your-id
+#  email:            your-id@your-email.com
 
 # Google-analytics
 google-analytics:
@@ -23,16 +23,16 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "your-id"
+  id:               "kenophob-io"
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
-url:                "http://localhost:4000" # use this url when develop
+url:                "http://kenophobio.github.io" # use this url when develop
 baseurl:            "" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
+timezone:           Europe/Amsterdam
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
