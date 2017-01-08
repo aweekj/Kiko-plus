@@ -3,9 +3,9 @@ published: true
 author: min
 title: A Lazy Girl's Guide to Setting Up Jupyter on EC2 for Deep Learning
 tags: 
-	- python
-	- jupyter
-	- aws
+    - python
+    - jupyter
+    - aws
 ---
 **TL;DR**: _I describe how I set up a Jupyter server on EC2 with a Marketplace AMI (so we don't have to install too much stuff ourselves) so we can speed up the training of our NN without leaving the convenient workflow of a Jupyter notebook._
 
