@@ -17,6 +17,24 @@ author:
 #  tumblr:           your-id
 #  email:            your-id@your-email.com
 
+authors:
+  min:
+    name: Min Fang
+    display_name: Min
+#    gravatar: c66919cb194f96c696c1da0c47354a6a
+#    email: hanzou@company.com
+#    web: http://company.com
+#    twitter: company
+#    github: hhattori
+  guyon:
+    name: Guyon Morée
+    display_name: Guyon
+ #   gravatar: 12e480a364a5c19214f99b4dfe9a11d5
+ #   email: jorgen@company.com
+ #   web: http://company.com
+ #   twitter: company
+    github: gumuz
+
 # Google-analytics
 google-analytics:
   id:               ""
