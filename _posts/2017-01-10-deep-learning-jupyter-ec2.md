@@ -85,7 +85,7 @@ c.NotebookApp.port = 8888" .jupyter/jupyter_notebook_config.py
 
 ### 4. Run the Jupyter Server
 
-Before starting the server, it is advisable to use some kind of session management tool to keep the server running after a user logout. I usually use `screen` but here also you can choose whichever you like.
+Before starting the server, it is advisable to use some kind of session management tool to keep the server running after a user logout. I usually use `screen` but here also you can choose whichever tool you like.
 
 ```shell
 screen -S jupyter
@@ -94,7 +94,7 @@ cd notebook
 jupyter notebook
 ```
 
-If you want to test the server with a notebook of yours immediately, now would be a good time to copy a notebook over to the server with `scp`. If you don't have one at hand, copy an [example notebook](https://github.com/fchollet/keras/tree/master/examples) from the `keras` repository. 
+If you want to test the server with a notebook of yours immediately, now would be a good time to copy a notebook over to the server with `scp`. If you don't have one at hand, you could copy an [example notebook](https://github.com/fchollet/keras/tree/master/examples) from the `keras` repository. 
 
 Your Jupyter server should now be accessible in your browser with this URL: `https://<your-instances-public-ip>:8888`. Try it!
 
@@ -113,3 +113,5 @@ The only thing I still had to do is to make `keras` use `tensorflow` as the back
     "backend": "tensorflow"
 }
 ```
+
+The first time you import `keras`, the console should tell you which backend you are currently using as well as some output indicating that you are using the GPU via CUDA. 
