@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign author = site.authors[page.author] %}
 <header>
   <h1 class="header-small">
     <a href="{{site.url}}{{site.baseurl}}">{{ site.name }}</a>
@@ -9,7 +10,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <p class="byline">
-    by {{ page.author }}
+    by {{ author.display_name }}
   </p>
   <span class="post-date">
     <time>{{ page.date | date_to_string }}</time>
