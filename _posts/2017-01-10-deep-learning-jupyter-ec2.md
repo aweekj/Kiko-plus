@@ -13,7 +13,7 @@ Getting started with deep learning is quite easy these days given all the availa
 
 Given the experimental nature of my enterprise I started out directly in a Jupyter notebook running locally on my Mac. However, after building more and more layers with more and more filters and starting to tune the hyperparameters for my networks, I noticed that the training time is starting to slow me down. Hence, it was time to move to an AWS EC2 machine with a dedicated GPU to speed up my experiments. In the following I will describe the steps I took to get to the point of training a NN with `keras` in a Jupyter notebook running on an EC2 instance. 
 
-**Requirements**: I assume in this post you already know how to set up an EC2 instance with your credentials so that you can access the instance once it has booted up. I also assume you know how to work with virtual environments for Python and you know the general workflow of installing Python packages. If not you can easily find [some](https://realpython.com/blog/python/python-virtual-environments-a-primer/) [articles](http://www.simononsoftware.com/virtualenv-tutorial-part-2/) explaining the purpose of virtual environments.
+**Prerequisites**: I assume in this post you already know how to set up an EC2 instance with your credentials so that you can access the instance once it has booted up. I also assume you know how to work with virtual environments for Python and you know the general workflow of installing Python packages. If not you can easily find [some](https://realpython.com/blog/python/python-virtual-environments-a-primer/) [articles](http://www.simononsoftware.com/virtualenv-tutorial-part-2/) explaining the purpose of virtual environments.
 
 
 ### 1. Launch an EC2 Instance With a Suitable AMI
@@ -32,7 +32,7 @@ We need to create a new security group with some specific rules as we want to be
 | SSH		| TCP		| 22			|0.0.0.0/0|
 | Custom TCP Rule	|TCP	|8888		|0.0.0.0/0|
 
-All of the steps described above can be summarised in the following CLI commands:
+All of the steps described above can be summarised in the following CLI commands if you don't want to go through the launch wizard in the web console:
 
 ```shell
 # create security group 
@@ -40,6 +40,7 @@ aws ec2 create-security-group --group-name JupyterSecurityGroup --description "M
 
 # add security group rules 
 aws ec2 authorize-security-group-ingress --group-name JupyterSecurityGroup --protocol tcp --port 8888 --cidr 0.0.0.0/0
+aws ec2 authorize-security-group-ingress --group-name JupyterSecurityGroup --protocol tcp --port 22 --cidr 0.0.0.0/0
 aws ec2 authorize-security-group-ingress --group-name JupyterSecurityGroup --protocol tcp --port 443 --cidr 0.0.0.0/0
 
 # launch instance 
@@ -60,7 +61,7 @@ Let's ssh to the instance using its DNS name.
 ```shell
 ssh -i <PATH_TO_PEM> ec2-user@ec2-xx-xxx-xx-xxx.eu-west-1.compute.amazonaws.com
 ```
-As is common practice with Python we will do everything from within a virtual environment. I will use Anaconda as my environment management tool but you can choose any tool of your choice as long as you know how to use it. With the preinstalled Anaconda distribution I will activate the default environment named `root`:
+As is common practice with Python we will do everything from within a virtual environment (even though it's probably not necessary here since this machine only has one purpose, namely to run our notebook). I will use Anaconda as my environment management tool but you can choose any tool of your choice as long as you know how to use it. With the preinstalled Anaconda distribution I will activate the default environment named `root`:
 
 ```shell
 source src/anaconda3/bin/activate root
@@ -173,6 +174,6 @@ The only thing I still had to do is to make `keras` use `tensorflow` as the back
 }
 ```
 
-The first time you import `keras`, the console should tell you which backend you are currently using as well as some output indicating that you are using the GPU via CUDA. 
+The first time you import `keras`, the console should tell you which backend you are currently using as well as some output indicating that you are using the GPU via CUDA (if not, try importing `keras` in the Python interpreter). 
 
 We're done! Have fun experimenting with your NNs!
