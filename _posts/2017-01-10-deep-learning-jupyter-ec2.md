@@ -9,6 +9,8 @@ tags:
 ---
 **TL;DR**: _I describe how I set up a Jupyter server on EC2 with a Marketplace AMI (so we don't have to install too much stuff ourselves) so we can speed up the training of our NN without leaving the convenient workflow of a Jupyter notebook._
 
+![Jupyter logo]({{site.baseurl}}/images/jupyter-main-logo.png)
+
 Getting started with deep learning is quite easy these days given all the available material out there. I got inspired to build my first convolutional neural network for sentiment analysis after reading [this paper](https://arxiv.org/abs/1408.5882) by Kim (2014) and attending a [PyData meetup](http://www.slideshare.net/textkernel/practical-deep-learning-for-nlp) with a `keras` demo (more about this maybe in another post). 
 
 Given the experimental nature of my enterprise I started out directly in a Jupyter notebook running locally on my Mac. However, after building more and more layers with more and more filters and starting to tune the hyperparameters for my networks, I noticed that the training time is starting to slow me down. Hence, it was time to move to an AWS EC2 machine with a dedicated GPU to speed up my experiments. In the following I will describe the steps I took to get to the point of training a NN with `keras` in a Jupyter notebook running on an EC2 instance. 
@@ -19,6 +21,8 @@ Given the experimental nature of my enterprise I started out directly in a Jupyt
 ### 1. Launch an EC2 Instance With a Suitable AMI
 
 Choosing the right AMI (Amazon Machine Image) will save us a lot of installation effort and time. Since our goal is to do some deep learning, I suggest looking for an AMI that comes with the deep learning library of your desire. In my case I wanted to use either `tensorflow` or `keras` with a `tensorflow` backend. Some searching in the AWS Marketplace reveals that [Amazon's Deep Learning AMI](https://aws.amazon.com/marketplace/pp/B01M0AXXQB) and [Bitfusion Ubuntu 14 TensorFlow AMI](https://aws.amazon.com/marketplace/pp/B01EYKBEQ0) are nice options. In the end I opted for the Amazon AMI and installed `keras` myself (see next step). Jupyter is also already preinstalled on both. 
+
+![AWS Marketplace Screenshot]({{site.baseurl}}/images/aws-marketplace-deep-learning-ami.png)
 
 (If you are not sure yet which libraries you will need, you can also use a vanilla Linux AMI and install everything you need later on the command line. But since this is the lazy girl's guide we want to spend as little time as possible on installation of tools.)
 
