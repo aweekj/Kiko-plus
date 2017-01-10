@@ -165,6 +165,8 @@ scp -i <PATH_TO_PEM> keras-example-notebook/Vanilla+CNN+on+MNIST+dataset.ipynb e
 Your Jupyter server should now be accessible in your browser with this URL: `https://<your-instances-public-ip>:8888`. And if you've copied the notebook over to the EC2 instance, you should be able to run your notebook now in the browser. 
 
 
+![Jupyter notebook overview screenshot]({{site.baseurl}}/images/jupyter-overview-screenshot.png)
+
 ### 5. Have Fun Experimenting with NNs
 
 The only thing I still had to do is to make `keras` use `tensorflow` as the backend library by modifying the config file `~/.keras/keras.json` (you have to create it if it isn't already there). Or just stick with the `theano` backend, which is also already installed. 
