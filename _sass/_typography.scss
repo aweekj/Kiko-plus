@@ -63,9 +63,30 @@ h6 {
   color: #aaa;
 }
 
+/*--------------
+  Align
+  -------------- */
+
+.center {
+  text-align: center;
+
+  &-image {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/*--------------
+  Text
+  -------------- */
+
 p {
   margin: 0 0 1rem;
 }
+
+/*--------------
+  Lists
+  -------------- */
 
 ul, ol, dl {
   margin-top: 0;
