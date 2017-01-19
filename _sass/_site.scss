@@ -6,13 +6,9 @@
 
 html {
   font-family: $base-font;
-  font-size: 18px;
+  font-size: $base-font-size;
   font-weight: 300;
   line-height: 1.6;
-
-  @media (min-width: 38em) {
-    font-size: 20px;
-  }
 }
 
 html,
@@ -41,9 +37,10 @@ body {
 
   &-title {
     font-weight: 300;
+    margin-bottom: 0.3em;
+
     a {
       color: $base-color;
-
       &:hover,
       &:focus {
         text-decoration: none;
@@ -51,48 +48,44 @@ body {
     }
 
     span {
-      color: lighten($base-color, 60);
+      color: $oc-gray-5;
     }
 
   }
 
   &-nav {
     a {
-      color: lighten($base-color, 50);
-      font-weight: 300;
+      color: $oc-gray-7;
       text-transform: lowercase;
       -webkit-transition: all .2s ease;
          -moz-transition: all .2s ease;
               transition: all .2s ease;
+      margin-right: .3rem;
 
       &:hover,
       &:focus {
-        color: $base-color;
+        color: $oc-gray-7;
         text-decoration: none;
-      }
-
-      + a {
-        margin-left: .25rem;
       }
     }
   }
 }
 
 .header-small {
-	text-align: left;
-	margin-bottom: .75rem;
-	font-size: .75rem;
-	font-weight: 600;
-	text-transform: uppercase;
+  text-align: left;
+  margin-bottom: .75rem;
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
 
-	a {
-		color: $base-color;
+  a {
+    color: $base-color;
 
-		&:hover,
-		&:focus {
-			text-decoration: none;
-		}
-	}
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
 /*--------------
@@ -101,6 +94,7 @@ body {
 
 .page {
   &-title {
+    margin-top: 0;
     margin-bottom: 2rem;
   }
 }
@@ -117,36 +111,52 @@ body {
 
   &-date {
     margin-bottom: .5rem;
-    color: $base-lighten-color;
+    color: $oc-gray-8;
     font-size: .75rem;
     text-transform: uppercase;
   }
 
-  &-tag {
+   &-tag {
     margin-bottom: 1rem;
-    .tag {
-      display: inline-block;
-      margin: 4px;
-      margin-left: 0px;
-      color: #fff;
-      background-color: $base-lighten-color;
-      text-decoration: none;
-			border-radius: 3px;
-    }
-    li {
-      font-size: .75rem;
-      display: inline;
-      list-style-type: none;
-      text-transform: lowercase;
-    }
-    span {
-      float: left;
-			padding: .5px 5px;
+
+    ul {
+      li:before {
+        content: ""
+      }
+
+      li {
+        margin: 0;
+        font-size: .75rem;
+        display: inline;
+        list-style-type: none;
+        text-transform: lowercase;
+
+        a {
+          display: inline-block;
+          margin: 4px;
+          margin-left: 0px;
+          color: $oc-white;
+          background-color: $oc-gray-6;
+          text-decoration: none;
+          border-radius: 3px;
+
+          span {
+            float: left;
+            padding: .5px 5px;
+          }
+        }
+
+        a:hover {
+          background-color: $oc-gray-7;
+        }
+      }
     }
   }
+  
   &-share {
     margin-bottom: 1rem;
   }
+
 }
 
 /*--------------
@@ -156,10 +166,11 @@ body {
 .list {
   &-post {
     padding: 4% 2%;
+    
     &:hover {
-    background-color: $background-over-color;
-    border-color: transparent;
-    border-radius: 10px;
+      background-color: $background-over-color;
+      border-color: transparent;
+      border-radius: 10px;
     }
 
     a {
@@ -172,19 +183,19 @@ body {
     }
 
     &-title {
-      margin-bottom: .25rem;
-      font-size : 1.6rem;
+      margin-bottom: .3rem;
+      font-size : 2rem;
       font-weight: 600;
     }
 
     &-date {
-      color: $base-lighten-color;
-      font-size: .75rem;
+      color: $oc-gray-7;
+      font-size: .8rem;
       text-transform: uppercase;
     }
 
     &-desc {
-			color: lighten($base-color, 20);
+      color: $oc-gray-8;
       margin-bottom: .25rem;
       font-size :1rem;
     }
@@ -199,11 +210,11 @@ body {
       float: left;
       padding-left: 2%;
       a {
-        color: $base-lighten-color;
+        color: $oc-gray-6;
 
         &:hover,
         &:focus {
-          color: $base-color;
+          color: $oc-gray-7;
           text-decoration: none;
         }
       }
@@ -213,10 +224,10 @@ body {
       float: right;
       padding-right: 2%;
       a {
-        color: $base-lighten-color;
+        color: $oc-gray-6;
 
         &:hover {
-          color: $base-color;
+          color: $oc-gray-7;
           text-decoration: none;
         }
       }
@@ -230,51 +241,68 @@ body {
   -------------- */
 .tag {
   &-index {
-    font-size: .75rem;
-    display: inline;
-    list-style-type: none;
-    text-transform: lowercase;
-
-
-    a {
-      display: inline-block;
-      margin: 1px 4px;
-      color: #fff;
-      background-color: lighten($base-color,50);
-			border-radius: 3px;
-      span {
-        float: left;
-        padding: .5px 5px;
+    ul {
+      li:before {
+        content: ""
       }
-      .count {
-        background-color: lighten($base-color,40);
-				border-radius: 0 3px 3px 0;
-      }
-      &:hover {
-        background-color: lighten($base-color,40);
+
+      li {
+        margin: 0;
+        font-size: 0.8rem;
+        display: inline;
+        list-style-type: none;
+        text-transform: lowercase;
+
+        a {
+          display: inline-block;
+          margin: 4px;
+          margin-left: 0px;
+          color: $oc-white;
+          background-color: $oc-gray-6;
+          text-decoration: none;
+          border-radius: 3px;
+
+          span {
+            float: left;
+            padding: .5px 5px;
+          }
+
+          .count {
+            background-color: $oc-gray-7;
+            border-radius: 0 3px 3px 0;
+          }
+        }
+
+        a:hover {
+          background-color: $oc-gray-7;
+        }
       }
     }
   }
 
   &-title {
-		font-size: 1.4rem;
-		font-weight: 600;
-		text-transform: lowercase;
-		padding-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    padding: 1rem 0;
   }
 
   &-post {
-		padding-left: .75rem;
-		a {
-			color: $base-color;
+    a {
+      color: $base-color;
 
-			&:hover {
-				color: $base-color;
-				text-decoration: none;
-				background-color: $background-over-color;
-		    border-color: transparent;
+      &:hover,
+      &:focus {
+        text-decoration: none;
       }
-		}
+    }
+
+    &:hover {
+      color: $base-color;
+      text-decoration: none;
+      background-color: $background-over-color;
+      border-color: transparent;
+      }
   }
 }
 
@@ -284,19 +312,21 @@ body {
 .archive {
   &-list {
     &-post {
+      padding: 0.1rem;
+
+      &:hover {
+          background-color: $background-over-color;
+          border-color: transparent;
+      }
 
       a {
         color: $base-color;
 
-        &:hover {
-  				color: $base-color;
-  				text-decoration: none;
-  				background-color: $background-over-color;
-  		    border-color: transparent;
+        &:hover,
+        &:focus {
+          text-decoration: none;
         }
-
       }
-
 
       &-title {
         font-size : 1.2rem;

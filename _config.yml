@@ -5,10 +5,7 @@
 # Basic
 name:               "Kiko Plus"
 
-
-
 author:
-  name:             your-name
   facebook:         your-id
   twitter:          your-id
   github:           your-id
@@ -17,18 +14,22 @@ author:
   tumblr:           your-id
   email:            your-id@your-email.com
 
+copyright:
+  year:             2017
+  name:             Kiko
+
 # Google-analytics
 google-analytics:
   id:               ""
 
 # Disqus
 disqus:
-  id:               "your-id"
+  id:               "kiko-plus"
 
 # URL
-#url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
-url:                "http://localhost:4000" # use this url when develop
-baseurl:            "" # the subpath of your site, e.g. /blog
+url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
+# url:                "http://localhost:4000" # use this url when develop
+baseurl:            "/Kiko-plus" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

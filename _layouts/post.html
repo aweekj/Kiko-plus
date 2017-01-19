@@ -15,8 +15,8 @@ layout: default
     <ul>
       {% for tag in page.tags %}
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}" class="tag">
-          <span class="term">{{ tag }}</span>
+        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+          <span>{{ tag }}</span>
         </a>
       </li>
       {% unless forloop.last %}{% endunless %}
