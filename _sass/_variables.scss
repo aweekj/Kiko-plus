@@ -3,25 +3,50 @@
 /*--------------
   Font
   -------------- */
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600';
-
-$base-font: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$base-font: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
 $code-font: Menlo, Monaco, monospace;
-$code-gist-font: Menlo, Monaco, "Courier New", monospace !important;
+$code-gist-font: Menlo, Monaco, "Courier New", monospace;
+
+$base-font-size: 18px;
 
 
 /*--------------
   Color
   -------------- */
-$base-color: rgba(#333,0.8);
-$base-lighten-color: lighten($base-color, 50);
+$base-color: $oc-gray-8;
+$base-lighten-color: $oc-gray-6;
 
-$background-color: #fff;
-$background-over-color: #f5f7f9;
+$background-color: $oc-white;
+$background-over-color: $oc-gray-1;
 
-$text-color: #333;
-$link-color: #268bd2;
+$text-color: $oc-gray-8;
+$link-color: $oc-blue-8;
 $code-color: #bf616a;
 $code-background-color: #f9f9f9;
 $table-border-color: #e5e5e5;
 $table-background-color: #f9f9f9;
+
+
+/*--------------
+  List
+  -------------- */
+
+$li-bottom-space: 0.8em;
+$li-bullets-width: 1.7em;
+$li-line-height: 1.55;
+
+$ul-bullets-font: inherit;
+$ul-bullets-font-size: 1.2em;
+$ul-bullets-font-line-height: 1.2;
+$ul-bullets-right-space: 0.65em;
+
+$ol-bullets-font: inherit;
+$ol-bullets-font-size: 1em;
+$ol-bullets-font-line-height: inherit;
+$ol-bullets-right-space: 0.65em;
+
+$li-child-size-ratio: 0.95;
+
+$dt-width: 180px;
+$dt-dd-space: 20px;
+$dd-position: $dt-width+$dt-dd-space

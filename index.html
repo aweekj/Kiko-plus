@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
-{% include header.html %}
+
+<header class="header">
+  <h1 class="header-title">
+    <a href="{{ site.url }}{{ site.baseurl }}">{{ site.name }}<span>&#39;s blog</span></a>
+  </h1>
+  <nav class="header-nav">
+    {% for nav in site.nav %}
+    {% if nav.url contains 'http://' or nav.url contains 'https://' %}
+    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    {% else %}
+    <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
+    {% endif %}
+    {% endfor %}
+  </nav>
+</header>
 
 <div class="list">
 {% if site.posts.size == 0 %}
