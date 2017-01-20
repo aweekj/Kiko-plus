@@ -74,6 +74,11 @@ task :draft do
   end
 end # task :draft
 
+desc "Install Jekyll Plugins"
+task :geminstall do
+  system "gem install jekyll-seo-tag jekyll-paginate jekyll-admin"
+end # task :geminstall
+
 desc "Launch preview environment"
 task :preview do
   system "jekyll serve --incremental"
