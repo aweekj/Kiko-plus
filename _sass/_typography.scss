@@ -7,10 +7,17 @@
 body {
   font: $base-font;
   font-size: $base-font-size;
+  font-weight: 400;
   color: $text-color;
   background-color: $background-color;
   -webkit-font-smoothing: antialiased;
   word-break: keep-all;
+
+  @media (max-width: 38rem){
+    font-size: $mobile-font-size;
+    font-weight: 300;
+    word-break: keep-all;
+  }
 }
 
 /*--------------
@@ -32,6 +39,7 @@ a {
   -------------- */
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -69,6 +77,7 @@ h6 {
 p {
   color: $text-color;
   margin: 0 0 1rem;
+  line-height: 1.7em;
 }
 
 /*--------------
@@ -155,21 +164,31 @@ dt {
   overflow: auto;
   clear: left;
   text-align: right;
-  text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: bold;
   margin-bottom: $li-bottom-space;
+
+  @media (max-width: 38rem){
+    width: 120px;
+  }
 }
 
 dd {
   margin-left: $dd-position;
   margin-bottom: $li-bottom-space;
+
+  @media (max-width: 38rem){
+    margin-left: 140px;
+  }
 }
+
+/*--------------
+  
+  -------------- */
 
 hr {
   border: 0;
-  border-top: .5px solid #eee;
-  border-bottom: .5px solid #eee;
+  border-top: 1px solid $divider-color;
   margin: 1.5rem auto;
 }
 
@@ -200,6 +219,41 @@ blockquote {
     margin-bottom: 0;
   }
 }
+
+/*--------------
+  Footnote
+  -------------- */
+
+a.footnote {
+  &,
+  .post p &,
+  .post ol &,
+  .post ul & {
+    margin: 0 3px;
+    padding: 2px 6px 2px;
+    font-size: $base-font-size-sm;
+    text-align: center;
+    -webkit-text-stroke: 0.25px;
+    border: 1px solid $divider-color;
+    border-radius: 2px;
+    -webkit-transition: 0.2s ease-out all;
+    text-decoration: none;
+
+    &:hover {
+      background: $background-over-color;
+    }
+  }
+}
+.footnotes {
+  margin: 4rem 0;
+  padding: 2rem 1em;
+  border-top: 1px solid $divider-color;
+  font-size: $base-font-size-sm;
+}
+
+/*--------------
+  Code Snippet
+  -------------- */
 
 code,
 pre {
@@ -273,12 +327,20 @@ pre code {
   border-radius: 0;
 }
 
+/*--------------
+  Image
+  -------------- */
+
 img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
 }
+
+/*--------------
+  Table
+  -------------- */
 
 table {
   margin-bottom: 1rem;

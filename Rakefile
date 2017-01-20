@@ -39,7 +39,6 @@ task :post do
     post.puts "date: #{date}"
     post.puts "tags: #{tags}"
     post.puts "comments: true"
-    post.puts "share: true"
     post.puts "---"
   end
 end # task :post
@@ -71,12 +70,11 @@ task :draft do
     draft.puts "date: #{date}"
     draft.puts "tags: #{tags}"
     draft.puts "comments: true"
-    draft.puts "share: true"
     draft.puts "---"
   end
 end # task :draft
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll serve -w"
+  system "jekyll serve --incremental"
 end # task :preview

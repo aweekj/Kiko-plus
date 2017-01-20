@@ -3,11 +3,14 @@
 /*--------------
   Font
   -------------- */
-$base-font: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
-$code-font: Menlo, Monaco, monospace;
+$base-font: 'Spoqa Han Sans', 'Source Sans Pro', Apple SD Gothic Neo, Nanum Barun Gothic, Nanum Gothic, Verdana, Arial, Dotum, sans-serif;
+$code-font: Menlo, 'Spoqa Han Sans', Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace;
 
 $base-font-size: 18px;
+$base-font-size-sm: 14px;
+
+$mobile-font-size: 16px;
 
 
 /*--------------
@@ -21,10 +24,12 @@ $background-over-color: $oc-gray-1;
 
 $text-color: $oc-gray-8;
 $link-color: $oc-blue-8;
-$code-color: #bf616a;
-$code-background-color: #f9f9f9;
-$table-border-color: #e5e5e5;
-$table-background-color: #f9f9f9;
+$code-color: $oc-indigo-9;
+$code-background-color: $oc-gray-1;
+$table-border-color: $oc-gray-2;
+$table-background-color: $oc-gray-1;
+
+$divider-color: $oc-gray-3;
 
 
 /*--------------

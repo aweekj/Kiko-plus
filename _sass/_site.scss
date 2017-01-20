@@ -7,7 +7,6 @@
 html {
   font-family: $base-font;
   font-size: $base-font-size;
-  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -19,12 +18,12 @@ body {
 
 .content-container {
   max-width: 38rem;
-  padding: 2rem 1.3rem;
+  padding: 5rem 1rem;
   margin-left:  auto;
   margin-right: auto;
 
-  @media (min-width: 38rem){
-    padding: 5rem 1rem;
+  @media (max-width: 38rem){
+    padding: 2rem 1.3rem;
   }
 }
 
@@ -106,6 +105,7 @@ body {
 .post {
 
   &-title {
+    margin-top: 0rem;
     margin-bottom: 0rem;
   }
 
@@ -152,9 +152,9 @@ body {
       }
     }
   }
-  
-  &-share {
-    margin-bottom: 1rem;
+
+  &-disqus {
+    margin-top: 4rem;
   }
 
 }
@@ -202,9 +202,10 @@ body {
   }
 
   &-pagination {
+    margin-top: 4rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    text-transform: lowercase;
+    // text-transform: lowercase;
 
     &-previous {
       float: left;

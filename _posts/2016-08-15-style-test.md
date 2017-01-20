@@ -10,40 +10,50 @@ share: true
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-# Body text
-
 ---
 
-# Center Heading 1
+## 1. Header 
+
+# Header 1
+
+## Header 2
+
+### Header 3
+
+#### Header 4
+
+##### Header 5
+
+###### Header 6
+
+### 1-1. Header Alignment 
+
+##### Left(Default)
+
+##### Center
 {: .center}
 
-# Heading 1
+##### Right
+{: .right}
 
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
-
+## 2. Body Text
 
 Lorem ipsum dolor sit amet, [test link](#) adipiscing elit. **This is strong.** Nullam dignissim convallis est. Quisque aliquam. *This is emphasized.* Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget `COPY filename` sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, <del>Dinner’s at 5:00.</del> commodo vitae, feugiat in, nunc. Morbi imperdiet augue <mark>mark element</mark> quis tellus.
 
-# Images
+## 3. Images
 
 ![Large example image](http://placehold.it/800x400 "Large example image")
 ![Medium example image](http://placehold.it/400x200 "Medium example image")
 ![Small example image](http://placehold.it/200x200 "Small example image")
+
+### 3-1. Image Alignment
 ![Center example image](http://placehold.it/200x200 "Center"){: .center-image}
 
-# Blockquotes
+## 4. Blockquotes
 
 > Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
 
-# List Types
+## 5. List Types
 
 ### Unordered List
 
@@ -71,7 +81,7 @@ kramdown
 Maruku
 : Another Markdown-superset converter
 
-# Tables
+## 6. Tables
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -84,9 +94,9 @@ Maruku
 | Foot1   | Foot2   | Foot3
 
 
-# Code Snippets
+## 7. Code Snippets
 
-Syntax highlighting via Rouge
+### Highlighted Code Blocks
 
 ```css
 #container {
@@ -96,8 +106,8 @@ Syntax highlighting via Rouge
 }
 ```
 
-Non Pygments code example
+### Standard code block
 
     <div id="awesome">
-        <p>This is great isn't it?</p>
+      <p>This is great isn't it?</p>
     </div>

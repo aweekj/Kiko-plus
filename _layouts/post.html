@@ -26,20 +26,12 @@ layout: default
 
   {{ content }}
 
-
-  <!-- Share -->
-  {% if page.share != false %}
-  <div class="post-share">
-    <hr>
-    {% include share.html %}
-    <hr>
-  </div>
-  {% endif %}
-
   <!-- Disqus -->
   {% if page.comments != false and site.disqus.id %}
-  <section id="disqus_thread"></section>
-  {% include disqus.html %}
+  <div class="post-disqus">
+      <section id="disqus_thread"></section>
+      {% include disqus.html %}
+  </div>
   {% endif %}
 
 </div>
