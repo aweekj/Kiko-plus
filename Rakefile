@@ -76,7 +76,7 @@ end # task :draft
 
 desc "Install Jekyll Plugins"
 task :geminstall do
-  system "gem install jekyll-seo-tag jekyll-paginate jekyll-admin"
+  system "sudo gem install jekyll-seo-tag jekyll-paginate jekyll-admin"
 end # task :geminstall
 
 desc "Launch preview environment"
