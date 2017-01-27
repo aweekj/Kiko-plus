@@ -17,12 +17,12 @@ body {
 }
 
 .content-container {
-  max-width: 38rem;
+  max-width: 48rem;
   padding: 5rem 1rem;
   margin-left:  auto;
   margin-right: auto;
 
-  @media (max-width: 38rem){
+  @media (max-width: 48rem){
     padding: 2rem 1.3rem;
   }
 }
