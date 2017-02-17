@@ -33,10 +33,13 @@ body {
   -------------- */
 .header {
   padding: 2%;
+  margin-bottom: 1.5em;
 
   &-title {
-    font-weight: 300;
     margin: 0.3em 0;
+    font-size: 2.25em;
+    line-height: 1.2em;
+    font-weight: 600;
 
     a {
       color: $base-color;
@@ -95,6 +98,9 @@ body {
   &-title {
     margin-top: 0;
     margin-bottom: 2rem;
+    font-size: 2.25em;
+    line-height: 1.2em;
+    font-weight: 600;
   }
 }
 
@@ -106,7 +112,10 @@ body {
 
   &-title {
     margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.3rem;
+    font-size: 2.25em;
+    line-height: 1.2em;
+    font-weight: 600;
   }
 
   &-date {
@@ -117,7 +126,7 @@ body {
   }
 
    &-tag {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
     ul {
       li:before {
@@ -127,6 +136,7 @@ body {
       li {
         margin: 0;
         font-size: .75rem;
+        font-weight: 300;
         display: inline;
         list-style-type: none;
         text-transform: lowercase;
@@ -184,18 +194,18 @@ body {
 
     &-title {
       margin-bottom: .3rem;
-      font-size : 2rem;
+      font-size : 1.8rem;
       font-weight: 600;
     }
 
     &-date {
-      color: $oc-gray-7;
+      color: $base-lighten-color;
       font-size: .8rem;
       text-transform: uppercase;
     }
 
     &-desc {
-      color: $oc-gray-8;
+      color: $base-color;
       margin-bottom: .25rem;
       font-size :1rem;
     }
@@ -331,7 +341,7 @@ body {
 
       &-title {
         font-size : 1.2rem;
-        font-weight: 600;
+        font-weight: 400;
       }
 
       &-date {

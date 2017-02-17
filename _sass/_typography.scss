@@ -37,37 +37,42 @@ a {
 /*--------------
   Header
   -------------- */
-
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  font-weight: 600;
 }
 
 h1 {
-  font-weight: 400;
-  line-height: 1.3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #eee;
 }
 
 h2 {
-  font-weight: 400;
-  line-height: 1.4em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225em;
+  border-bottom: 1px solid #eee;
 }
 
-h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.5em;
+h3 { 
+  font-size: 1.5em; 
+  line-height: 1.43em;
 }
 
-h1 { font-size: 2.7em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.33em; }
-h4 { font-size: 1.33em; color: $oc-gray-6; }
-h5 { font-size: 1em; }
-h6 { 
+h4 { 
+  font-size: 1.25em;
+}
+
+h5 { 
   font-size: 1em; 
+}
+
+h6 { 
+  font-size: 1em;
   color: $oc-gray-6; 
-  -webkit-margin-before: 1.67em;
-  -webkit-margin-after: 1.67em;
 }
 
 /*--------------
