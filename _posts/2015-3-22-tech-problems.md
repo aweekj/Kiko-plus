@@ -1,0 +1,13 @@
+---
+layout: post
+title: Problems Facing Tech Industry!
+---
+
+There is no doubt that technology has had a huge impact in the lives of people all over the world.  Most would agree that our lives have been improved by the advancements made in the tech industry and all of the products that have been released as a result; but just like all things, technology can be used for good and bad…and that’s super dangerous when we’re talking about something so powerful.
+
+When technology is used for nefarious ideas or actions, what becomes the responsibility of that piece of technology?  For example, there is this dude in Texas named <a href="http://www.vice.com/video/click-print-gun-the-inside-story-of-the-3d-printed-gun-movement">Cody Wilson</a>, and he is a huge advocate of using 3D Printers to produce fully functional firearms.  He has produced them, fired them, and distributed the downloadable plans so that people can reproduce these guns at home.  I mean, that shit is kind of scary in the wrong hands…but theres nothing anyone can really do about it now.  He has had his plans removed from the certain websites, but an idea can never die on the internet and who is anyone to start policing the internet anyway?  Essentially, the problem with all of this is that technology empowers people, and not everyone has the best intentions for using power.
+Additionally, looking further into the realm of 3D printing, where does that stop?  Will economies shift in a weird way because in the future this technology advances so far that more things are printed at home than are built and sold through traditional means?  What does this mean for those jobs?
+
+Online retailers and apps have also had huge ramifications to various industries.  Amazon.com has crushed many brick and mortar retailers through the convenience they offer to customers and their technology applied to online shopping.  Uber has created a new option to ground car transportation, disrupting the traditional taxi cab economies in various cities around the world, forcing many out of a job.  It definitely seems like many companies in the tech industry are creating in order to disrupt and make gains in various sectors through added technology and convenience…but maybe some sectors should exist to employ and provide livable wages…not just to be the most efficient entity that can replace a former way of doing something with an app or a machine.
+
+The tech industry will continue to move forward, creating software and products that make our perceived lives seem easier and better,  but we have to be mindful of the consequences of these advancements.  Like all things in life, we must practice personal responsibility in what we create and attempt to have our society’s best interest in mind.
