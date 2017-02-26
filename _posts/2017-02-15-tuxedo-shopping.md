@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tuxedo Shopping
+description: I got a tuxedo...open the post to find more juicy details!!! 
 ---
 
 ## AY YO I GOT A TUXXXX
