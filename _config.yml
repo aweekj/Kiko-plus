@@ -8,7 +8,7 @@ name:               "John Lyden"
 author:
   facebook:         your-id
   twitter:          your-id
-  github:           your-id
+  github:           johnlyden 
   linkedin:         your-id
   medium:           your-id
   tumblr:           your-id
@@ -16,7 +16,7 @@ author:
 
 copyright:
   year:             2017
-  name:             Kiko
+  name:             John Lyden 
 
 # Google-analytics
 google-analytics:
@@ -49,12 +49,12 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
+  - name:           "Projekts"
+    url:            "/projekts"
   - name:           "Archive"
     url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
   - name:           "Github"
-    url:            ""
+    url:            "http://www.github.com/johnlyden"
 
 # Sass
 sass:
