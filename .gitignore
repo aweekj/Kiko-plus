@@ -3,3 +3,5 @@ _site
 Gemfile.lock
 _drafts
 .jsbeautifyrc
+assets/DS_STORE
+images/DS_STORE

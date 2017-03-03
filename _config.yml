@@ -3,12 +3,12 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "John Lyden"
 
 author:
   facebook:         your-id
   twitter:          your-id
-  github:           your-id
+  github:           johnlyden 
   linkedin:         your-id
   medium:           your-id
   tumblr:           your-id
@@ -16,7 +16,7 @@ author:
 
 copyright:
   year:             2017
-  name:             Kiko
+  name:             John Lyden 
 
 # Google-analytics
 google-analytics:
@@ -27,9 +27,9 @@ disqus:
   id:               "kiko-plus"
 
 # URL
-url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
+url:                "https://johnlyden.github.io" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
-baseurl:            "/Kiko-plus" # the subpath of your site, e.g. /blog
+baseurl:            "" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -49,12 +49,12 @@ kramdown:
 nav:
   - name:           "About"
     url:            "/about"
+  - name:           "Projekts"
+    url:            "/projekts"
   - name:           "Archive"
     url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+    url:            "http://www.github.com/johnlyden"
 
 # Sass
 sass:
