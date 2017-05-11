@@ -37,7 +37,7 @@ disqus:
 # URL
 url:                "https://mckelvaney.github.io/mckelvaneyleech-com/" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
-baseurl:            "/" # the subpath of your site, e.g. /blog
+baseurl:            "" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
