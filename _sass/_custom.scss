@@ -1,0 +1,65 @@
+@mixin breakpoint($size) {
+  @media (min-width: $size)  { @content ; }
+}
+
+.group::before,
+.group::after {
+  content: '';
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; // For IE 6/7 (trigger hasLayout)
+}
+
+main h2 {
+  border-bottom: 0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+.home-section {
+ margin-bottom: 1rem;
+}
+
+.who-we-are {}
+
+.col {
+  @include breakpoint(760px) {
+    width: 50%;
+    float: left;
+  }
+}
+
+.col--a {}
+.col--b {}
+
+.col__header {
+  text-align: center;
+}
+
+.features {}
+
+.features li {
+  margin-bottom: .4rem;
+}
+
+.who-we-are__photo {
+  max-width: 100%;
+}
+
+.client-list li {
+  margin-bottom: .3rem;
+}
