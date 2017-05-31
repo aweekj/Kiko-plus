@@ -19,7 +19,7 @@ layout: default
 
 <div class="list">
 {% if site.posts.size == 0 %}
-  <h2>No post found</h2>
+<!-- No post found -->
 {% else %}
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
@@ -28,7 +28,7 @@ layout: default
     <a href="{{ post.link }}">
     {% else %}
     <a href="{{ post.url | prepend: site.baseurl }}">
-    {% endif %}  
+    {% endif %}
       <div class="list-post-date">
         <time>{{ post.date | date_to_string }}</time>
       </div>
