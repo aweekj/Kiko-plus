@@ -57,9 +57,64 @@ main h2 {
 }
 
 .who-we-are__photo {
-  max-width: 100%;
+  max-width: 90%;
+
 }
 
 .client-list li {
   margin-bottom: .3rem;
 }
+
+/* Joe's hacks */
+
+ul.client-list {
+  	padding: 0;
+  	list-style-type: none; /* can't get this working */
+  	margin-top:30px;
+  
+
+  }
+  
+  .client-list li {
+  	display: block;
+  	float: left;
+  	margin-left: 30px;
+    
+
+  }
+  
+  .client-list img {
+  	 	width: 200px;
+  }
+  
+  .rasp-logo {
+  	clear: both;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100px;
+  	display: block;
+  }
+  
+  .clearfix:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+  }
+  
+  @media only screen /* can't seem to get this to work */
+  
+      and (min-device-width : 375px) and (max-device-width : 667px) 
+      
+      {
+      .who-we-are__photo { /* making our faces not giant on mobile */
+      	width:70%;
+      	margin:0 auto;
+      
+      }
+      	
+      }
+  
+
