@@ -1,0 +1,120 @@
+@mixin breakpoint($size) {
+  @media (min-width: $size)  { @content ; }
+}
+
+.group::before,
+.group::after {
+  content: '';
+  display: table;
+}
+
+.group::after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; // For IE 6/7 (trigger hasLayout)
+}
+
+main h2 {
+  border-bottom: 0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+.home-section {
+ margin-bottom: 1rem;
+}
+
+.who-we-are {}
+
+.col {
+  @include breakpoint(760px) {
+    width: 50%;
+    float: left;
+  }
+}
+
+.col--a {}
+.col--b {}
+
+.col__header {
+  text-align: center;
+}
+
+.features {}
+
+.features li {
+  margin-bottom: .4rem;
+}
+
+.who-we-are__photo {
+  max-width: 90%;
+
+}
+
+.client-list li {
+  margin-bottom: .3rem;
+}
+
+/* Joe's hacks */
+
+ul.client-list {
+  	padding: 0;
+  	list-style-type: none; /* can't get this working */
+  	margin-top:30px;
+  
+
+  }
+  
+  .client-list li {
+  	display: block;
+  	float: left;
+  	margin-left: 30px;
+    
+
+  }
+  
+  .client-list img {
+  	 	width: 200px;
+  }
+  
+  .rasp-logo {
+  	clear: both;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 100px;
+  	display: block;
+  }
+  
+  .clearfix:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+  }
+  
+  @media only screen /* can't seem to get this to work */
+  
+      and (min-device-width : 375px) and (max-device-width : 667px) 
+      
+      {
+      .who-we-are__photo { /* making our faces not giant on mobile */
+      	width:70%;
+      	margin:0 auto;
+      
+      }
+      	
+      }
+  
+

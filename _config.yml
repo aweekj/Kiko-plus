@@ -3,20 +3,28 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "McKelvaney & Leech"
 
 author:
-  facebook:         your-id
-  twitter:          your-id
-  github:           your-id
-  linkedin:         your-id
-  medium:           your-id
-  tumblr:           your-id
-  email:            your-id@your-email.com
+#  facebook:         your-id
+#  youtubeUser:      your-id
+#  youtubeChannel:   your-id
+#  twitter:          your-id
+#  github:           your-id
+#  stackoverflow:    your-id
+#  quora:            your-id
+#  linkedin:         your-id
+#  pinterest:        your-id
+#  googlePlus:       your-id
+#  instagram:        your-id
+#  reddit:           your-id
+#  medium:           your-id
+#  tumblr:           your-id
+  email:            hello@mckelvaneyleech.com
 
 copyright:
   year:             2017
-  name:             Kiko
+  name:             McKelvaney & Leech
 
 # Google-analytics
 google-analytics:
@@ -24,16 +32,16 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "kiko-plus"
+  id:               ""
 
 # URL
-url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
+url:                "https://mckelvaney.github.io/mckelvaneyleech-com/" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
-baseurl:            "/Kiko-plus" # the subpath of your site, e.g. /blog
+baseurl:            "" # the subpath of your site, e.g. /blog
 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
+timezone:           Europe/London
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
@@ -47,14 +55,14 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "About"
-    url:            "/about"
-  - name:           "Archive"
-    url:            "/archive"
-  - name:           "Tags"
-    url:            "/tags"
-  - name:           "Github"
-    url:            "https://github.com/AWEEKJ/Kiko-plus"
+#  - name:           "About"
+#    url:            "/about"
+#  - name:           "Archive"
+#    url:            "/archive"
+#  - name:           "Tags"
+#    url:            "/tags"
+#  - name:           "Github"
+#    url:            "https://github.com/AWEEKJ/Kiko-plus"
 
 # Sass
 sass:
@@ -80,6 +88,5 @@ defaults:
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
-  - jekyll-admin
 
 exclude:            [vendor]
