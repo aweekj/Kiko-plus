@@ -11,12 +11,10 @@ body {
   color: $text-color;
   background-color: $background-color;
   -webkit-font-smoothing: antialiased;
-  word-break: keep-all;
 
   @media (max-width: 38rem){
     font-size: $mobile-font-size;
     font-weight: 300;
-    word-break: keep-all;
   }
 }
 
