@@ -161,7 +161,11 @@ body {
         }
 
         a:visited {
-          background-color: $oc-white;
+          background-color: $oc-gray-5;
+        }
+
+        a:visited:hover {
+          background-color: $oc-gray-7;
         }
       }
     }
